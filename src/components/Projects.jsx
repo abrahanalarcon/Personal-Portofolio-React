@@ -10,8 +10,12 @@ function Projects(){
     <div className="contenedor" id="portafolio">
       <h1 className="centrar-texto">Interesting<span className="logo__bold"> Projects</span></h1>
        <div className="grid-pages">
-        {data.map(() => (
-              <Cards/>
+        {data.map((cards) => (
+              <Cards
+                 key={cards.id} 
+                 cards={cards}
+              
+              />
         
         ))}
          
