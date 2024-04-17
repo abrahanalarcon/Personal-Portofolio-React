@@ -1,10 +1,30 @@
+import Header from "./components/Header"
+
+import './App.css';
+import MainContent from "./components/MainContent";
+import Projects from "./components/Projects";
 
 function App() {
   
   return (
-    <>
-      <h1> Personal Portofolio</h1>
-    </>
+    <div className="App">
+      
+        <Header />
+        <MainContent/>
+        <Projects/>
+
+
+    
+
+    
+
+
+
+
+
+        
+
+    </div>
   )
 }
 
