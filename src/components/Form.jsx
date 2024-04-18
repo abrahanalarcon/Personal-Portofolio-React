@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Form = () => {
   const [datos, setDatos] = useState({
@@ -8,6 +8,16 @@ const Form = () => {
     telefono: ''
   });
   const [alerta, setAlerta] = useState(null);
+
+  useEffect(() => {
+    if (alerta) {
+      const timeout = setTimeout(() => {
+        setAlerta(null);
+      }, 3000);
+      
+      return () => clearTimeout(timeout);
+    }
+  }, [alerta]);
 
   const handleChange = (e) => {
     setDatos({
@@ -26,16 +36,14 @@ const Form = () => {
     }
 
     // Lógica para enviar el formulario aquí...
-
+  
     mostrarAlerta('Mensaje enviado correctamente');
+    console.log('enviado correctamente')
   };
 
   const mostrarAlerta = (mensaje, error = false) => {
     setAlerta({ mensaje, error });
-
-    setTimeout(() => {
-      setAlerta(null);
-    }, 3000);
+    console.log('todos los campos son obligatorios')
   };
 
   return (
@@ -98,16 +106,18 @@ const Form = () => {
             <input type="submit" className="boton w-sm-100" value="Send" />
           </div>
         </fieldset>
-      </form>
-
-      {/* Renderizar la alerta si existe */}
-      {alerta && (
+        {alerta && (
         <div className={`alerta ${alerta.error ? 'error' : 'correcto'}`}>
           {alerta.mensaje}
         </div>
       )}
+      </form>
+
+      {/* Renderizar la alerta si existe */}
+      
     </div>
   );
 };
 
 export default Form;
+
