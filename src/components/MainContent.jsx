@@ -2,7 +2,7 @@ import moisesImage from '../img/Moises.png';
 
 function MainContent() {
     return (
-      <div className="contenedor dos-columnas">
+      <div className="contenedor dos-columnas" id="Main">
             <article className="entrada-blog">
                 <h3 className="no-margin">Hello,It's me!</h3>
                 <h2 className="no-margin">Moises Alarcon</h2>

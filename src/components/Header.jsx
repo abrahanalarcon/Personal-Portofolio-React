@@ -10,9 +10,9 @@ function Header() {
           </a>
 
           <nav className="navegacion">
-            <a href="Services.html" className="navegacion__enlace">Services</a>
-            <a href="jsap.html" className="navegacion__enlace">Portofolio</a>
-            <a href="Contact.html" className="navegacion__enlace">Contact</a>
+            <a href="#Services" className="navegacion__enlace">Services</a>
+            <a href="#portafolio" className="navegacion__enlace">Portofolio</a>
+            <a href="#last" className="navegacion__enlace">Contact</a>
           </nav>
         </div>
       </div>
