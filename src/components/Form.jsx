@@ -47,8 +47,8 @@ const Form = () => {
   };
 
   return (
-    <div>
-      <h2 className="centrar-texto">Meet</h2>
+    <div id="last">
+      <h2 className="centrar-texto no-padding">Meet</h2>
       <form className="formulario" onSubmit={handleSubmit}>
         <fieldset>
           <legend>Contact us by filling out these fields</legend>

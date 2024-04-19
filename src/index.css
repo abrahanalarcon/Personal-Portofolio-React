@@ -86,6 +86,9 @@ img {
 }
 
 /** Header **/
+header{
+ padding-bottom: 6rem;
+}
 
 
 .header__texto {
@@ -257,6 +260,7 @@ img {
     margin-top: 4rem;
     display: grid;
     grid-template-rows: repeat(2, auto);
+    padding-bottom: 3rem;
   }
 
 
@@ -434,11 +438,17 @@ img {
     margin-top: 2rem;
   }
   
-
+  .no-padding{
+   padding-bottom: 0;
+}
   
 /*Contacto */
+#last h2.centrar-texto {
+    margin-bottom: 10px; /* Ajusta el margen inferior del h2 */
+  }
 
 .formulario{
+    margin-top: 10px;
     background-color: transparent;
     width:  min(60%, 100%);/* Utilizar el valor mas pequeno*/
     margin: 0  auto;
@@ -567,6 +577,7 @@ footer{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
+    padding-bottom: 6rem;
 }
 @media (min-width: 768px){
     .grid-pages{
@@ -626,7 +637,7 @@ footer{
 }
 
  /* **************************************Funciones Y Diseños***************************   */
-/*                                          JAVA SCRIPTS                       */
+/*                                          JAVASCRIPTS                       */
 /*Validacion de Formulario  */
 
 
@@ -726,16 +737,16 @@ footer{
     margin-top: 1rem; /* Ajusta según sea necesario */
 }
 
-/* Resto de estilos... */
+/********************************************************************************* Resto de estilos...                                                     */
 
-/* Añade estas reglas para centrar verticalmente los botones dentro de los elementos */
+
 .card .button {
-    margin-top: auto; /* Empujar el botón hacia abajo para centrar verticalmente */
+    margin-top: auto; 
 }
 
-/* Añade estas reglas para centrar verticalmente los botones dentro de los elementos */
+
 .card .button {
-    margin-top: auto; /* Empujar el botón hacia abajo para centrar verticalmente */
+    margin-top: auto; 
 }
 
 
@@ -764,7 +775,7 @@ footer{
   }
 
   .imagen_skills {
-    margin-top: 150px; /* Ajusta el margen superior según sea necesario para mover la imagen hacia abajo */
+    margin-top: 150px; 
   }
 
 
@@ -793,13 +804,13 @@ footer{
     .project-tile {
       width: 100%;
       max-width: none;
-      margin: 15px 0; /* Añadido para mejorar el espacio entre los elementos */
+      margin: 15px 0; 
     }
   
    .button {
       display: block;
       width: 100%;
-      margin-top: 10px; /* Espacio entre el texto y el botón */
+      margin-top: 10px; 
     }  
   }   
 
@@ -826,13 +837,13 @@ footer{
   @media (min-width: 900px) {
     #cards-container {
       display: grid;
-      grid-template-columns: repeat(3, 1fr); /* Cambia el número de columnas según tu preferencia */
-      gap: 20px; /* Ajusta el espacio entre las columnas */
-      justify-items: center; /* Centra los elementos en el eje horizontal */
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 20px; 
+      justify-items: center; 
     }
   
     .project-tile {
-      width: 100%; /* Establece el ancho al 100% para ocupar toda la columna */
-      max-width: 300px; /* Define un ancho máximo para los project-tile */
+      width: 100%; 
+      max-width: 300px; 
     }
   }
