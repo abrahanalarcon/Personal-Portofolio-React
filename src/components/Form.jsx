@@ -8,6 +8,7 @@ const Form = () => {
     telefono: ''
   });
   const [alerta, setAlerta] = useState(null);
+  const [formularioEnviado, setFormularioEnviado] = useState(false);
 
   useEffect(() => {
     if (alerta) {
@@ -18,6 +19,18 @@ const Form = () => {
       return () => clearTimeout(timeout);
     }
   }, [alerta]);
+
+  useEffect(() => {
+    if (formularioEnviado) {
+      setDatos({
+        nombre: '',
+        email: '',
+        mensaje: '',
+        telefono: ''
+      });
+      setFormularioEnviado(false);
+    }
+  }, [formularioEnviado]);
 
   const handleChange = (e) => {
     setDatos({
@@ -38,6 +51,8 @@ const Form = () => {
     // Lógica para enviar el formulario aquí...
   
     mostrarAlerta('Mensaje enviado correctamente');
+    setFormularioEnviado(true);
+
     console.log('enviado correctamente')
   };
 
@@ -103,7 +118,7 @@ const Form = () => {
             </div>
           </div>
           <div className="alinear-derecha flex">
-            <input type="submit" className="boton w-sm-100" value="Send" />
+          <input type="submit" className={`boton w-sm-100 ${formularioEnviado ? 'enviado' : ''}`} value={formularioEnviado ? 'Sent' : 'Send'} disabled={formularioEnviado} />
           </div>
         </fieldset>
         {alerta && (

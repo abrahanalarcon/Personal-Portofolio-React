@@ -185,10 +185,7 @@ img {
     color: white;
     text-decoration: none; /* Agregado */
     transition: background-color 0.3s, color 0.3s;
-    animation-name: floating;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    
   }
 
   .profile-links:hover{

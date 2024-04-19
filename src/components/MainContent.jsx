@@ -25,9 +25,11 @@ function MainContent() {
                 </a>
 
 
-                <a href="https://www.linkedin.com/in/moises-abrahan-alarcon-hazim-6b614a217/"
-                target="_blank"
-                className="button-1">View Resume</a>
+                
+                <a href="https://www.linkedin.com/in/moises-abrahan-alarcon-hazim-6b614a217/" target="_blank" className="profile-links">
+                <i className="fab fa-linkedin"></i>
+                </a>
+
                 </div>
             </article>
 

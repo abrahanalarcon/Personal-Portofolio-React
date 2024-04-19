@@ -188,10 +188,7 @@ header{
     color: white;
     text-decoration: none; /* Agregado */
     transition: background-color 0.3s, color 0.3s;
-    animation-name: floating;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    
   }
 
   .profile-links:hover{
@@ -507,6 +504,7 @@ header{
  padding: 1.5rem;
  border-radius: .5rem;
  background-color: #2b303b;
+ color:#e1e1e1;
  
 } /* sirve para seleccionar los selectores de manera mas expecifica*/
 /*Button design*/
@@ -734,7 +732,8 @@ footer{
     box-shadow: 4px 4px 20px rgba(0, 240, 220, 0.692), -4px 4px 20px rgba(182, 194, 199, 0.986);
     color: white;
     text-decoration: none;
-    margin-top: 1rem; /* Ajusta según sea necesario */
+    margin-top: 1rem; 
+    text-align: center;
 }
 
 /********************************************************************************* Resto de estilos...                                                     */
