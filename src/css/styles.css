@@ -255,6 +255,10 @@ img {
     display: grid;
     grid-template-rows: repeat(2, auto);
   }
+  .dos-columnas p{
+    margin-top: 1.5rem;
+
+  }
 
 
   .dos-columnas img {

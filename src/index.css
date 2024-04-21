@@ -259,6 +259,10 @@ header{
     grid-template-rows: repeat(2, auto);
     padding-bottom: 3rem;
   }
+  .dos-columnas p{
+    margin-top: 1.5rem;
+
+  }
 
 
   .dos-columnas img {
