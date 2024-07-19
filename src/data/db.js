@@ -1,23 +1,23 @@
 export const db = [
     {
         id: 1,
-        name: 'Control de Gastos ',
-        image: '17',
-        url: 'https://ubiquitous-begonia-92e5e9.netlify.app/',
+        name: 'BlogCafe',
+        image: '6',
+        url: 'https://roaring-youtiao-af4457.netlify.app/',
         
     },
     {
         id: 2,
-        name: 'Movies',
-        image: '18',
-        url: 'https://streamingmoviesreact.netlify.app/',
+        name: 'FrontendStore',
+        image: '7',
+        url: 'https://my-frontedstore.netlify.app/',
         
     },
     {
         id: 3,
-        name: 'Cryptocurrencys',
-        image: '19',
-        url: 'https://excryptocurrenciesreact.netlify.app/',
+        name: 'FreelancerPage',
+        image: '5',
+        url: 'https://taupe-valkyrie-fb7011.netlify.app/',
         
     },
  
